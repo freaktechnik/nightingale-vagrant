@@ -14,4 +14,6 @@ git submodule update
 ## Usage
 Open a console window, go to the directory with the desired system architecture (e.g. ubuntu-64 for a 64-bit Linux build) and run `vagrant up`. It will then start a virtual machine, install the dependencies and build Nightingale, which is then returned to your environment in the dist folder within the architecture directory.
 
+Alternatively you can run all builds in sequence by calling `make`. `make clean` will remove any traces of builds from the tree.
+
 [nightingale]: https://github.com/nightingale-media-player/nightingale-hacking
