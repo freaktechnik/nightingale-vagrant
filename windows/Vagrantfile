@@ -18,20 +18,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # win.vm.box_url = "https://atlas.hashicorp.com/designerror/boxes/windows-7/versions/1.0/providers/virtualbox.box"
   end
 
-  # Create a forwarded port mapping which allows access to a specific port
-  # within the machine from a port on the host machine. In the example below,
-  # accessing "localhost:8080" will access port 80 on the guest machine.
-  # config.vm.network :forwarded_port, guest: 80, host: 8080
-
-  # Create a private network, which allows host-only access to the machine
-  # using a specific IP.
-  # config.vm.network :private_network, ip: "192.168.33.10"
-
-  # Create a public network, which generally matched to bridged network.
-  # Bridged networks make the machine appear as another physical device on
-  # your network.
-  # config.vm.network :public_network
-
   # If true, then any SSH connections made will enable agent forwarding.
   # Default value: false
   # config.ssh.forward_agent = true
@@ -39,7 +25,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Share the Nightingale source
   config.vm.synced_folder "../nightingale-hacking", "/nightingale-hacking"
 
-  config.vm.provision :shell, path: "setup_box.sh"
+  config.vm.provision :shell, path: "setup_box.bat"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
