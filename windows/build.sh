@@ -1,3 +1,4 @@
 #! C:\mozilla-build\msys\bin\bash
-cd "C:\tmp\nightingale-hacking"
+TEMP?=C:\tmp
+cd "$TEMP\nightingale-hacking"
 ./build.sh
