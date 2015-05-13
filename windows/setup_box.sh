@@ -20,7 +20,7 @@ echo 'ac_add_options --enable-installer' >> $local_src/nightingale.config
 echo 'ac_add_options --with-msvc-express' >> $local_src/nightingale.config
 
 # BUILD, run as user, since else msvc craps itself and displays unrelated errors.
-psexec -h -u vagrant -p vagrant psexec -accepteula "C:\vagrant\start-msvc9.bat"
+psexec -h -u vagrant -p vagrant -accepteula "C:\vagrant\start-msvc9.bat"
 
 # Sync the build and installer to the host machine
 xcopy /y/s/e/k/z/i "C:\temp\nightingale-hacking\compiled\dist" "C:\vagrant\dist"
