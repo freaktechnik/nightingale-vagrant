@@ -2,6 +2,7 @@ SHELL = /bin/sh
 
 SUBDIRS = ubuntu-64 \
 ubuntu-32 \
+windows \
 $(null)
 
 SRCDIR = "nightingale-hacking"

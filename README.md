@@ -16,4 +16,7 @@ Open a console window, go to the directory with the desired system architecture 
 
 Alternatively you can run all builds in sequence by calling `make`. `make clean` will remove any traces of builds from the tree.
 
+### Windows
+The windows instance uses a box called "freaktechnik/windows-7-ngale", which is not publically available. It's a Windows 7 box, with a minimal cygwin as ssh shell, chocolatey, MSVS Express 2008 and the Windows DDK preinstalled.
+
 [nightingale]: https://github.com/nightingale-media-player/nightingale-hacking
