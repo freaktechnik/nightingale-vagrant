@@ -1,3 +1,4 @@
+#! /bin/bash
 # Install the deps that aren't on the VM yet.
 echo "\n" | cmd /C "choco install -y 7Zip"
 echo "\n" | cmd /C "choco install -y mozillabuild"
