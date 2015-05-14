@@ -98,4 +98,4 @@ set INCLUDE=%INCLUDE%;c:\WinDDK\7600.16385.1\inc\api;c:\WinDDK\7600.16385.1\inc\
 set LIB=%LIB%;c:\WinDDK\7600.16385.1\lib\wxp\i386;c:\WinDDK\7600.16385.1\lib\Crt\i386;C:\WinDDK\7600.16385.1\lib\ATL\i386
 set PATH=%PATH%;c:\WinDDK\7600.16385.1\bin\x86\x86;c:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin;c:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin;c:\mozilla-build\msys\bin;C:\Program Files (x86)\Git\bin
 
-"%MOZILLABUILD%\msys\bin\bash" --login -i cd /c/vagrant/ && ./build.sh
+%MOZILLABUILD%\msys\bin\bash --login -i -c "cd /c/tmp/nightingale-hacking/ && ./build.sh"
