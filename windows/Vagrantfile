@@ -21,8 +21,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provision :shell, path: "setup_box.bat"
 
-   config.vm.provider :virtualbox do |vb|
+  # config.vm.provider :virtualbox do |vb|
   #   # Don't boot with headless mode
-     vb.gui = true
-   end
+  #   vb.gui = true
+  # end
 end
